@@ -60,6 +60,9 @@ nav h1{
     gap: 50px;
     align-items: center;
 }
+.nav_right li:hover{
+    border-bottom: 2px solid #2A838D;
+}
 .nav_list li{
     cursor: pointer;
 }
