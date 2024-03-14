@@ -17,6 +17,7 @@ body{
 }
 .top_nav_right a{
     border-bottom: 1px solid white;
+    cursor: pointer;
 }
 nav{
     display: flex;
@@ -53,6 +54,7 @@ nav{
 nav h1{
     font-size: 36px;
     cursor: pointer;
+    color:  #19575D;
 }
 .nav_list{
     display: flex;
