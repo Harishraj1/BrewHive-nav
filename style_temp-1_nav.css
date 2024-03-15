@@ -74,6 +74,46 @@ nav h1{
 .nav_list li{
     cursor: pointer;
 }
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 #search_icon{
     color: #2A838D;
     cursor: pointer;
@@ -161,6 +201,9 @@ display:none;
     .cart_bag{
         display: block;
     }
+    .dropdown{
+        display: none;
+    }
 }
 @media (max-width: 632px ){
     .search-field:focus {
@@ -180,9 +223,14 @@ display:none;
     #close_nav{
         font-size: 16px;
     }
-    .search-field:focus{
-        display: none;
+    nav{
+        justify-content: space-between;
+        padding: 4px;
     }
+    .nav_list{
+        gap: 25px; 
+    }
+    
 }
 @media (max-width: 490px){
     .nav_list{
@@ -196,6 +244,11 @@ display:none;
     }
     .top_nav_right1 a{
         border-bottom: 1px solid white;
+    }
+}
+@media (max-width: 490px){
+    .search-field:focus{
+        width: 130px;
     }
 }
 @media (max-width: 350px){
@@ -218,10 +271,22 @@ display:none;
     .side_nav ul{
         margin-top: 35%;
     }
+    .search-field:focus{
+        width: 120px;
+    }
+    .container .search-field {
+        background-size: 20px 20px; /* Adjust the size as needed */
+    }
 }
 @media (max-width: 300px){
     .top_nav{
         padding: 10px 10px;
+    }
+    .container .search-field {
+        background-size: 15px 15px; /* Adjust the size as needed */
+    }
+    .search-field:focus{
+        width: 100px;
     }
 }
 @media (max-width: 250px){
